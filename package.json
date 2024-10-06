@@ -47,5 +47,9 @@
   },
   "dependencies": {
     "tslib": "^2.7.0"
+  },
+  "peerDependencies": {
+    "react": ">=14.0.0",
+    "react-dom": ">=14.0.0"
   }
 }
