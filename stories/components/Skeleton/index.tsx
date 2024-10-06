@@ -1,4 +1,4 @@
-import { Colors } from '../../token';
+import { Colors } from '../../token/styles';
 import styles from './Skeleton.module.scss';
 
 interface ISkeletonUIProps extends React.HTMLAttributes<HTMLDivElement> {
