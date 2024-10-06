@@ -27,7 +27,7 @@ export default {
     typescript({ tsconfig: './tsconfig.json' }),
     postcss({
       modules: true,
-      extract: true,
+      extract: false,
       use: ['sass'],
     }),
     babel({
