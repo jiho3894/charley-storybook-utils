@@ -1,0 +1,26 @@
+.skeleton {
+  --glare-bg: linear-gradient(90deg, transparent, hsla(0, 0%, 100%, 0.4), transparent);
+  position: relative;
+  border-radius: var(--Radius-xl, 24px);
+  background-color: #e8e6edff;
+  overflow: hidden;
+}
+
+.skeleton::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: var(--glare-bg);
+  transform: translateX(-100%);
+  animation: skeleton-glare 1.5s infinite ease-out;
+  z-index: 1;
+}
+
+@keyframes skeleton-glare {
+  to {
+    transform: translateX(100%);
+  }
+}
